@@ -10,7 +10,7 @@ load_dotenv(BASE_DIR / '.env')
 # ── Core ──────────────────────────────────────────────────────────────────────
 SECRET_KEY = os.getenv('SECRET_KEY', 'meditrack-dev-secret-key-change-in-production')
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1', 'meditrack-v2-wok7.onrender.com').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
